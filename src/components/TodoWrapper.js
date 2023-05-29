@@ -13,6 +13,11 @@ export default function TodoWrapper(){
     const toggleComplete= id =>{
         setTodos(todos.map(todo=>todo.id===id ? {...todo,completed: !todo.completed} :todo))
     }
+
+    const deleteTodo=id =>{
+        setTodos(todos.filter(todo=>todo.id !==id))
+    }
+
     return (
       <div className="TodoWrapper">
         <h1>My To-do list</h1>
