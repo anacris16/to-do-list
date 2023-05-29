@@ -99,3 +99,14 @@ a:hover{
   cursor:pointer;
   font-weight:bolder;
 }
+
+@media (max-width:900px){
+  .TodoWrapper{
+    max-width:400px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  footer{
+    font-size:9px;
+  }
+}
